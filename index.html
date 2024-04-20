@@ -154,15 +154,6 @@
                     </div>
                     <h5>Soumission Gratuite</h5>
                 </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
-                    <div class="d-flex align-items-center justify-content-between mb-2">
-                        <div class="d-flex align-items-center justify-content-center bg-light" style="width: 60px; height: 60px;">
-                            <i class="fa fa-headphones fa-2x text-primary"></i>
-                        </div>
-                        <h1 class="display-1 text-light mb-0">04</h1>
-                    </div>
-                    <h5>Customer Support</h5>
-                </div>
             </div>
         </div>
     </div>
@@ -382,90 +373,83 @@
 
 
     <!-- Quote Start -->
-    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
-        <div class="container quote px-lg-0">
-            <div class="row g-0 mx-lg-0">
-                <div class="col-lg-6 quote-text py-5 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="p-lg-5 pe-lg-0">
-                        <div class="pourquoi text-start">
-                            <h1 class="display-5 mb-4">Obtenez une soumission</h1>
-                        </div>
-                        <p class="mb-4 pb-2">Obtenez un prix pour votre plancher d'époxy avec Expoxy Twin</p>
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Votre Nom" style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control border-0" placeholder="Votre Email" style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Votre Téléphone" style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <select class="form-select border-0" style="height: 55px;">
-                                        <option selected>Selectionnez un service</option>
-                                        <option value="1">Couleur Unie</option>
-                                        <option value="2">Métallique Marbré</option>
-                                        <option value="3">Béton Naturel</option>
-                                        <option value="3">Flocons</option>
-                                        <option value="3">Autre</option>
-                                    </select>
-                                </div>
-                                <div class="col-12">
-                                    <textarea class="form-control border-0" placeholder="Note"></textarea>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Envoyer</button>
-                                </div>
-                            </div>
-                        </form>
+<div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+    <div class="container">
+        <div>
+            <div class="col-lg-10 quote-text wow fadeIn" data-wow-delay="0.5s">
+                <div class="p-lg-5 pe-lg-0">
+                    <div class="pourquoi text-start">
+                        <h1 class="display-5 mb-4">Obtenez une soumission <img src="img\img\Mv8DmqatNAV150.png" class="desktop-only"> </h1>
                     </div>
+                    <p class="mb-4 pb-2">Obtenez un prix pour votre plancher d'époxy avec Expoxy Twin</p>
+                    <form id="quoteForm" action="https://formspree.io/f/xdoqyzwn" method="POST">
+                        <div class="row g-3">
+                            <div class="col-12 col-sm-6">
+                                <input type="text" class="form-control border-0" placeholder="Votre Nom" style="height: 55px;" name="name">
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="email" class="form-control border-0" placeholder="Votre Email" style="height: 55px;" name="_replyto">
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="text" class="form-control border-0" placeholder="Votre Téléphone" style="height: 55px;" name="phone">
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <select class="form-select border-0" style="height: 55px;" name="service">
+                                    <option selected>Selectionnez un service</option>
+                                    <option value="1">Couleur Unie</option>
+                                    <option value="2">Métallique Marbré</option>
+                                    <option value="3">Béton Naturel</option>
+                                    <option value="4">Flocons</option>
+                                    <option value="5">Autre</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control border-0" placeholder="Note" name="note"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary w-100 py-3" type="submit" onclick="submitForm()">Envoyer</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Quote End -->
+</div>
+<!-- Quote End -->
+
+<script>
+    function submitForm() {
+        // Reset the form
+        document.getElementById("quoteForm").reset();
+    }
+</script>
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container-fluid bg-dark text-light footer mt-1 pt-1 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Address</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <h4 class="text-light mb-4"><img src="img\img\aCn2gM-d.png" class="desktop-only"></h4>
+                    <p class="mb-2"></i>EPOXY TWIN</p>
+                    <p class="mb-2"></i>FAITES DE VOS PLANCHER DE RÊVE UNE RÉALITÉ</p>
                     <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/epoxy_twin/"><i class="fab fa-instagram"></i></a>
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-6" style="padding-top: 100px;">
                     <h4 class="text-light mb-4">Services</h4>
-                    <a class="btn btn-link" href="">General Carpentry</a>
-                    <a class="btn btn-link" href="">Furniture Remodeling</a>
-                    <a class="btn btn-link" href="">Wooden Floor</a>
-                    <a class="btn btn-link" href="">Wooden Furniture</a>
-                    <a class="btn btn-link" href="">Custom Carpentry</a>
+                    <a class="btn btn-link" href="">Couleur Unie</a>
+                    <a class="btn btn-link" href="">Métallique Marbré</a>
+                    <a class="btn btn-link" href="">Béton Naturel</a>
+                    <a class="btn btn-link" href="">Flocons</a>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Quick Links</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Newsletter</h4>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                    <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                    </div>
+                <div class="col-lg-3 col-md-6" style="padding-top: 100px;">
+                    <h4 class="text-light mb-4">Info</h4>
+                    <a class="btn btn-link" href="">Gallerie</a>
+                    <a class="btn btn-link" href="">Contactez-nous</a>
+                    <a class="btn btn-link" href="">Soumission</a>
                 </div>
             </div>
         </div>
@@ -473,11 +457,11 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
+                        &copy; <a class="border-bottom" href="#">ExpoxyTwin.com</a>, All Right Reserved.
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                        Designed By <a class="border-bottom" href="https://www.instagram.com/fastdev.design/"> FastDevDesign</a>
                     </div>
                 </div>
             </div>
