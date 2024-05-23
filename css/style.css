@@ -67,6 +67,10 @@
     transition: .5s;
 }
 
+.btn.btnn-black {
+    color: #000000
+}
+
 .btn.btn-primary,
 .btn.btn-secondary {
     color: #FFFFFF;
