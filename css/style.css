@@ -156,7 +156,7 @@
 }
 
 .navbar-toggler-icon {
-    background-color: var(--dark); /* Change the color of the toggler icon */
+    background-color: var(--light); /* Change the color of the toggler icon */
 }
 .dropdown-toggle::after {
     font-family: 'Font Awesome 5 Free';
@@ -185,6 +185,11 @@
 }
 .nav-red {
     color: red !important;
+}
+@media (max-width: 991.98px) {
+    .navbar .dropdown-menu {
+        background-color: #ffffff; /* Add your desired background color here */
+    }
 }
 
 
@@ -618,6 +623,7 @@
     background: linear-gradient(rgba(53, 53, 53, .7), rgba(53, 53, 53, .7)), url(../img/footer.jpg) center center no-repeat;
     background-size: cover;
 }
+
 
 .footer .btn.btn-social {
     margin-right: 5px;
