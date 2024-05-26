@@ -14,6 +14,14 @@
         display: none; /* Hide the element on mobile devices */
     }
 }
+.product-link {
+    color: black; /* Set the link color to black */
+    text-decoration: none; /* Remove the underline from links */
+}
+.product-link:hover {
+    color: black; /* Set the hover color to black */
+    text-decoration: underline; /* Add underline on hover */
+}
 
 /* Define styles for desktop devices */
 @media only screen and (min-width: 769px) {
@@ -374,7 +382,6 @@
 /*** Service ***/
 .service-item img {
     transition: .5s;
-    border-radius: 15px;
 }
 
 .service-item:hover img {
