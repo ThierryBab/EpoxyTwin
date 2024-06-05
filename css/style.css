@@ -141,31 +141,58 @@
 }
 
 .navbar .nav-item.dropdown:hover .nav-link {
-    color: var(--primary);
+    color: white;
 }
 
 .navbar .nav-link {
     padding: 10px 20px;
-    color: var(--dark);
+    color: white;
     font-size: 15px;
     font-weight: 500;
     text-transform: uppercase;
+    position: relative;
 }
 
 .navbar .nav-link.active,
 .navbar .nav-link:hover {
-    color: var(--primary);
+    color: white;
+}
+
+@media (min-width: 992px) {
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 50%;
+        background-color: currentColor;
+        transition: width 0.3s ease, left 0.3s ease;
+        box-sizing: content-box;
+    }
+
+    .nav-link:hover::after {
+        width: 100%;
+        left: 0;
+    }
+}
+
+.nav-red {
+    padding-right: 50px;
+    color: red !important;
 }
 
 /* Additional Styles for Visibility */
 .navbar {
-    background-color: #fff; /* Change to the desired background color */
-    box-shadow: 0px 0px 10px #8d8d8d; /* Add shadow for contrast */
+    background-color: #000000;
+    box-shadow: 0px 0px 10px #8d8d8d;
 }
 
 .navbar-toggler-icon {
-    background-color: var(--light); /* Change the color of the toggler icon */
+    background-color: #000000; /* Make sure --light is defined */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
+
 .dropdown-toggle::after {
     font-family: 'Font Awesome 5 Free';
     content: '\f078'; /* Angle down icon */
@@ -173,31 +200,42 @@
 }
 
 .dropdown-menu {
-    border: none; /* Remove default border */
-    box-shadow: 0px 4px 10px  #8d8d8d; /* Add shadow for depth */
+    border: none;
+    box-shadow: 0px 4px 10px #000000;
+    background-color: #000000; /* Apply background color here */
 }
 
 .dropdown-item {
-    padding: 10px 20px; /* Adjust padding */
-    font-size: 14px; /* Adjust font size */
+    padding: 10px 20px;
+    font-size: 14px;
+    color: white;
 }
 
 .dropdown-item:hover {
-    background-color: #f8f9fa; /* Change background color on hover */
+    background-color: #353535;
 }
-.bg-dark-grey {
-    background-color: #8d8d8d; /* Change this color code to your desired dark grey color */
-}
-.logo {
-    max-height: 100px; /* Adjust the max-height value as needed */
-}
-.nav-red {
-    color: red !important;
-}
+
 @media (max-width: 991.98px) {
     .navbar .dropdown-menu {
-        background-color: #ffffff; /* Add your desired background color here */
+        background-color: #000000;
     }
+    .dropdown-item {
+        color: rgba(255, 255, 255, 0.836);
+    }
+}
+
+   /* Navbar styles */
+   .navbar {
+    transition: top 0.3s ease-in-out;
+}
+
+.navbar.hidden {
+    top: -70px; /* Adjust the navbar height */
+}
+
+/* Additional styles */
+.logo {
+    max-height: 85px; /* Adjust the logo size */
 }
 
 
@@ -627,7 +665,7 @@
 
 /*** Footer ***/
 .footer {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/footer.jpg) center center no-repeat;
+    background: linear-gradient(#000000, #000000), url(../img/footer.jpg) center center no-repeat;
     background-size: cover;
 }
 
