@@ -3,6 +3,7 @@
     --primary: #dd1414;
     --light: #F5F5F5;
     --dark: #353535;
+    --black: #000000;
 }
 
 /* Define styles for mobile devices */
@@ -88,8 +89,8 @@
 }
 
 .btn.btn-black {
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
+    color: #000000;
 }
 
 .btn.btn-black:hover {

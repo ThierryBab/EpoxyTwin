@@ -556,7 +556,7 @@
   animation-name: bounceOutUp;
 }
 
-@keyframes fadeIn {
+@keyframes fadeInn {
   from {
     opacity: 0;
   }
@@ -566,8 +566,8 @@
   }
 }
 
-.fadeIn {
-  animation-name: fadeIn;
+.fadeInn {
+  animation-name: fadeInn;
 }
 
 @keyframes fadeInDown {

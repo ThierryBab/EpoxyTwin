@@ -8,7 +8,6 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,6 +36,16 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+      <link rel="stylesheet" href="nicepage.css" media="screen">
+      <link rel="stylesheet" href="home-1.css" media="screen">
+          <script class="u-script" type="text/javascript" src="jquery-1.9.1.min.js" defer=""></script>
+          <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+          <meta name="generator" content="Nicepage 6.11.10, nicepage.com">
+          <meta name="referrer" content="origin">
+          <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+          <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|PT+Sans:400,400i,700,700i|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+          
 
   
 </head>
@@ -80,162 +89,25 @@
 <!-- Navbar End -->
     
 
-    <!-- Carousel Start#Desktop-->
-    <div>
-        <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0 desktop-only">
-            <div class="container about px-lg-0">
-                <div class="row g-0 mx-lg-0">
-                    <div class="col-lg-6 ps-lg-0 image-container slide-in-left">
-                        <div class="position-relative h-100">
-                            <img class="position-absolute img-fluid w-100 h-100 hover-zoom rounded" src="img/9.jpg" style="object-fit: cover;" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-6 about-text py-5 slide-in-right" data-wow-delay="0.5s">
-                        <div class="p-lg-5 pe-lg-0">
-                            <div class="text-start">
-                                <h1 class="mb-4">Bienvenue sur EpoxyTwin</h1>
-                            </div>
-                            <h5 class="mb-4 pb-2">Spécialiste de revêtement en époxy.</h5>
-                            <a href="quote.html" class="btn btn-black py-3 px-5">Obtenez une soumission</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0 mobile-only">
-            <div class="container about px-lg-0">
-                <div class="row g-0 mx-lg-0">
-                    <div class="col-lg-6 about-text py-5 slide-in-right" data-wow-delay="0.5s">
-                        <div class="p-lg-5 pe-lg-0">
-                            <div class="text-start">
-                                <h1 class="mb-4">Bienvenue sur EpoxyTwin</h1>
-                            </div>
-                            <h5 class="mb-4 pb-2">Spécialiste de revêtement en époxy.</h5>
-                            <a href="quote.html" class="btn btn-black py-3 px-5">Obtenez une soumission</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 ps-lg-0 image-container slide-in-left">
-                        <div class="position-relative h-100">
-                            <img class="position-absolute img-fluid w-100 h-100 hover-zoom rounded" src="img/9.jpg" style="object-fit: cover;" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        <style>
-            .container-fluid {
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                border-radius: 15px;
-                overflow: hidden;
-            }
-    
-            .image-container {
-                min-height: 400px;
-            }
-    
-            .hover-zoom {
-                transition: transform 0.5s ease, box-shadow 0.5s ease;
-                border-radius: 15px 0 0 15px;
-            }
-    
-            .hover-zoom:hover {
-                transform: scale(1.1);
-                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            }
-    
-            .about-text {
-                padding: 2rem 1rem !important;
-                background-color: #fff;
-                border-radius: 0 15px 15px 0;
-            }
-    
-            .text-start h1 {
-                font-size: 2.5rem;
-                font-weight: 700;
-                color: #333;
-            }
-    
-            .text-start h5 {
-                font-size: 1.25rem;
-                font-weight: 500;
-                color: #555;
-            }
-    
-            .btn-black {
-                background-color: #000;
-                color: #fff;
-                border: none;
-                border-radius: 50px;
-                transition: background-color 0.3s ease, box-shadow 0.3s ease;
-            }
-    
-            .btn-black:hover {
-                background-color: #333;
-                color: #fff;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            }
-    
-            @media (min-width: 768px) {
-                .image-container {
-                    min-height: 500px;
-                }
-            }
-    
-            @media (max-width: 767px) {
-                .about-text {
-                    padding: 2rem 1rem !important;
-                }
-    
-                .image-container {
-                    min-height: 300px;
-                }
-    
-                .hover-zoom {
-                    transform: scale(1.05);
-                }
-            }
-    
-            @keyframes slideInLeft {
-                0% {
-                    transform: translateX(-100%);
-                    opacity: 0;
-                }
-                100% {
-                    transform: translateX(0);
-                    opacity: 1;
-                }
-            }
-    
-            @keyframes slideInRight {
-                0% {
-                    transform: translateX(100%);
-                    opacity: 0;
-                }
-                100% {
-                    transform: translateX(0);
-                    opacity: 1;
-                }
-            }
-    
-            .slide-in-left {
-                animation: slideInLeft 1s ease-out;
-            }
-    
-            .slide-in-right {
-                animation: slideInRight 1s ease-out;
-            }
-        </style>
+<section class="u-clearfix u-section-1" id="carousel_b19e">
+    <div class="u-expanded-width bg-primary u-shape u-shape-rectangle u-shape-1" data-animation-name="lightSpeedIn" data-animation-duration="1500" data-animation-direction="" data-animation-delay="250"></div>
+    <img src="img/9.jpg" class="u-align-left u-image u-image-round u-radius-10 u-image-1" data-image-width="1350" data-image-height="900" data-animation-name="customAnimationIn" data-animation-duration="1500">
+    <div class="u-align-left u-container-align-left u-container-style u-radius-10 u-shape-round u-group-1" style="background-color: #000;" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="250">
+      <div class="u-container-layout u-valign-middle u-container-layout-1">
+        <h1 class="u-align-left u-text u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500" style="color: #fff;"> Bienvenue sur EpoxyTwin</h1>
+        <p class="u-align-left u-text u-text-2" style="color: #fff;">Découvrez EpoxyTwin, votre partenaire de confiance pour des sols en époxy exceptionnels. Plongez dans notre gamme de revêtements de sol innovants, conçus pour allier durabilité, esthétique et praticité. Transformez votre espace avec nos solutions sur mesure, offrant une résistance inégalée et une finition impeccable.</p>        </p>
+
+        <a href="quote.html" class="btn btn-black py-3 px-5">Obtenez une soumission</a>      
     </div>
-    <!-- Carousel End#Desktop -->
+    </div>
+</section>
 
 
 
     <!-- Feature Start -->
 <div class="container py-5">
     <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col wow fadeIn" data-wow-delay="0.1s">
+        <div class="col wow fadeInn" data-wow-delay="0.1s">
             <div class="feature-item bg-light rounded-3 p-4 d-flex flex-column align-items-center">
                 <div class="icon bg-primary d-flex justify-content-center align-items-center rounded-circle mb-3">
                     <i class="fa fa-user-check fa-2x text-light"></i>
@@ -244,7 +116,7 @@
                 <p class="text-secondary">Travaillez avec nos designers pour créer une solution unique pour votre espace.</p>
             </div>
         </div>
-        <div class="col wow fadeIn" data-wow-delay="0.3s">
+        <div class="col wow fadeInn" data-wow-delay="0.3s">
             <div class="feature-item bg-light rounded-3 p-4 d-flex flex-column align-items-center">
                 <div class="icon bg-primary d-flex justify-content-center align-items-center rounded-circle mb-3">
                     <i class="fa fa-check fa-2x text-light"></i>
@@ -253,7 +125,7 @@
                 <p class="text-secondary">Nous utilisons uniquement des matériaux de haute qualité pour des résultats durables et esthétiques.</p>
             </div>
         </div>
-        <div class="col wow fadeIn" data-wow-delay="0.5s">
+        <div class="col wow fadeInn" data-wow-delay="0.5s">
             <div class="feature-item bg-light rounded-3 p-4 d-flex flex-column align-items-center">
                 <div class="icon bg-primary d-flex justify-content-center align-items-center rounded-circle mb-3">
                     <i class="fa fa-drafting-compass fa-2x text-light"></i>
@@ -299,7 +171,7 @@
                         <img class="position-absolute img-fluid w-100 h-100" src="img/img/11.jpg" style="object-fit: cover;" alt="">
                     </div>
                 </div>
-                <div class="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                <div class="col-lg-6 about-text py-5 wow fadeInn" data-wow-delay="0.5s">
                     <div class="p-lg-5 pe-lg-0">
                         <div class="pourquoi text-start">
                             <h1 class="display-5 mb-4">Pourquoi EpoxyTwin</h1>
@@ -391,73 +263,46 @@
 
 
 
-
-
-    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0 desktop-only">
-        <div class="container about px-lg-0">
-            <div class="row g-0 mx-lg-0">
-                <div class="col-lg-6 ps-lg-0" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute img-fluid w-100 h-100" src="img/img/11.jpg" style="object-fit: cover;" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="p-lg-5 pe-lg-0">
-                        <div class="section-title text-start">
-                            <h1 class="display-5 mb-4">COMMERCIAL</h1>
-                        </div>
-                        <p class="mb-4 pb-2">L'époxy offre une option de revêtement de béton attrayante, durable, facile à entretenir, et à prix compétitif qui résiste à un trafic élevé. Il peut être utilisé dans une grande variété de commerces, offrant une option de revêtement sans joint et personnalisable, ce qui fait de Mr. Epoxy un excellent choix pour les espaces commerciaux !</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+<section class="u-clearfix u-section-5" id="carousel_866a" style="background-color: #000;">
+    <img class="u-expanded-width u-image u-image-default u-image-1" src="img/img/12.jpg" alt="" data-image-width="1618" data-image-height="1080">
+    <div class="u-align-center u-container-align-center u-container-style u-group u-radius-10 u-shape-round u-white u-group-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
+      <div class="u-container-layout u-valign-middle u-container-layout-1">
+        <h3 class="u-align-center u-text u-text-1"> Innovation at Work</h3>
+        <p class="u-align-center u-text u-text-2">
+          <span style="font-style: italic;"> Adipiscing bibendum est ultricies integer quis auctor elit. Eget nunc scelerisque viverra mauris in volutpat est.</span>
+          <br>
+          <br>Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Nulla pharetra diam sit amet nisl.
+        </p>
+        <div class="u-image u-image-circle u-image-2" alt="" data-image-width="909" data-image-height="909" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="750"></div>
+        </p>
+      </div>
     </div>
-
-    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0 desktop-only">
-        <div class="container about px-lg-0">
-            <div class="row g-0 mx-lg-0">
-                <div class="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="p-lg-5 pe-lg-0">
-                        <div class="section-title text-start">
-                            <h1 class="display-5 mb-4">RÉSIDENTIEL</h1>
-                        </div>
-                        <p class="mb-4 pb-2">L'époxy peut être appliqué dans une variété d'espaces résidentiels. Connu principalement comme revêtement de béton pour les garages et les balcons/escaliers (système flocon), nos systèmes de couleur unie et métallique sont également populaires pour des espaces tels que les cuisines, salons, salles à manger, salles de bains, sous-sols, et même l'ensemble de la maison. La nature élégante, facile à entretenir, sans joints et économique de notre époxy en fait une excellente option pour votre maison !</p>
-                    </div>
-                </div>
-                <div class="col-lg-6 ps-lg-0" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute img-fluid w-100 h-100" src="img/img/11.jpg" style="object-fit: cover;" alt="">
-                    </div>
-                </div>
+</section>
+<section class="skrollable skrollable-between u-align-center u-clearfix u-container-align-center-xs u-section-6" style="background-color: #000;" id="carousel_395d" src="">
+    <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+      <p class="u-align-center-xs u-text u-text-default u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500" style="color: #fff;">Nous avons un seul but</p>
+      <p class="u-align-center-xs u-large-text u-text u-text-variant u-text-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500" style="color: #fff;">Explorez notre savoir-faire et laissez-nous vous accompagner dans la création d’un espace qui vous inspire et vous protège, jour après jour.</p>
+      <div  style="padding-left: 150px;" class="u-align-center-xs u-clearfix u-expanded-width-xs u-layout-custom-sm u-layout-custom-xs u-layout-wrap u-layout-wrap-1">
+        <div class="u-layout">
+          <div class="u-layout-row">
+            <div class="u-align-left u-container-align-center-xs u-container-style u-layout-cell u-right-cell u-size-30-lg u-size-30-md u-size-30-sm u-size-30-xl u-size-60-xs u-layout-cell-2">
+              <div class="u-container-layout u-valign-top u-container-layout-2">
+                <a href="#" class="u-active-white u-align-center-xs u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xl u-border-2 u-border-active-white u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-custom-font u-font-lato u-hover-white u-none u-radius-5 u-text-active-palette-1-base u-text-hover-palette-1-base u-btn-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="750" data-animation-direction="">Nos Projects</a>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+      </p>
     </div>
-    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0 desktop-only">
-        <div class="container about px-lg-0">
-            <div class="row g-0 mx-lg-0">
-                <div class="col-lg-6 ps-lg-0" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute img-fluid w-100 h-100" src="img/img/11.jpg" style="object-fit: cover;" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="p-lg-5 pe-lg-0">
-                        <div class="section-title text-start">
-                            <h1 class="display-5 mb-4">INDUSTRIEL</h1>
-                        </div>
-                        <p class="mb-4 pb-2">L'époxy est depuis longtemps utilisé dans les installations industrielles en raison de sa facilité d’entretien/de nettoyage, de sa durabilité et de ses propriétés antidérapantes supérieures. Vous trouverez de l'époxy dans des espaces industriels, qu'ils soient grands ou petits, tels que des bureaux, des entrepôts, des sites de fabrication et des garages souterrains.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+  </section>
 
 
     <!-- Quote Start -->   
 <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
     <div class="container">
         <div>
-            <div class="col-lg-10 quote-text wow fadeIn" data-wow-delay="0.5s">
+            <div class="col-lg-10 quote-text wow fadeInn" data-wow-delay="0.5s">
                 <div class="p-lg-5 pe-lg-0">
                     <div class="pourquoi text-start">
                         <h1 class="display-5 mb-4">Obtenez une soumission <img src="img\img\Mv8DmqatNAV150.png" class="desktop-only"> </h1>
@@ -634,7 +479,7 @@
 </script>
 
     <!-- Footer Start -->
-<div class="container-fluid bg-light text-light footer mt-1 pt-1 wow fadeIn" data-wow-delay="0.1s">
+<div class="container-fluid bg-light text-light footer mt-1 pt-1 wow fadeInn" data-wow-delay="0.1s">
     <div class="container py-5">
         <div class="row g-3">
             <div class="col-lg-3 col-md-6">
@@ -754,7 +599,6 @@
     <!-- Template Javascript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrD+x8gTz6nE5E/xZC7nVqz4gY3bLvjvs//4GP+4F4FV5waFUXY4Uy0Qo0j3gy9T" crossorigin="anonymous"></script>
 
 </body>
 
