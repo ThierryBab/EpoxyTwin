@@ -108,7 +108,7 @@
     <!-- Offcanvas Right -->
     <div class="offcanvas offcanvas-end offcanvas-dark" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
-            <h5 id="offcanvasRightLabel">Menu</h5>
+            <h5 id="offcanvasRightLabel" style="color: white;">Menu</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
@@ -126,10 +126,10 @@
                             <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#servicesAccordion">
                                 <div class="accordion-body">
                                     <ul class="list-unstyled ps-0">
-                                        <li><a href="serviceUnie.html" class="nav-link">Couleur Unie</a></li>
-                                        <li><a href="serviceMM.html" class="nav-link">Métallique Marbré</a></li>
-                                        <li><a href="serviceBeton.html" class="nav-link">Béton Naturel</a></li>
-                                        <li><a href="serviceFlocon.html" class="nav-link">Flocons</a></li>
+                                        <li><a href="serviceUnie.html" class="nav-link nav-link-menu">Couleur Unie</a></li>
+                                        <li><a href="serviceMM.html" class="nav-link nav-link-menu">Métallique Marbré</a></li>
+                                        <li><a href="serviceBeton.html" class="nav-link nav-link-menu" >Béton Naturel</a></li>
+                                        <li><a href="serviceFlocon.html" class="nav-link nav-link-menu">Flocons</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -147,13 +147,21 @@
             width: 250px; /* Width of the drawer */
         }
         .offcanvas-dark {
-            background-color: rgba(0, 0, 0, 0.87); /* Black background */
+            background-color: rgba(0, 0, 0, 0.945); /* Black background */
         }
         .offcanvas-dark .nav-link {
             color: white; /* White text for nav links */
             text-align: left; /* Align text to the left */
             display: block; /* Ensure the link takes full width */
             padding: 5px 10px; /* Consistent padding for each link */
+        }
+        .offcanvas-dark .nav-link-menu {
+            color: white; /* White text for nav links */
+            text-align: left; /* Align text to the left */
+            display: block; /* Ensure the link takes full width */
+            padding: 5px 10px; /* Consistent padding for each link */
+            padding-left: 15px; 
+            text-decoration: underline;
         }
         .offcanvas-dark .nav-link:hover {
             color: #cccccc; /* Lighter gray on hover */
@@ -207,6 +215,12 @@
         }
         .offcanvas-dark ul.list-unstyled > li:last-child {
             margin-bottom: 0; /* Remove bottom margin for last item */
+        }
+        .offcanvas-dark .accordion-button:not(.collapsed) .fa-chevron-down {
+        transform: rotate(180deg);
+        }
+        .offcanvas-dark .accordion-collapse {
+        transition: height 0.3s ease;
         }
     </style>
 
