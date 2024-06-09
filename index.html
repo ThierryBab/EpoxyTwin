@@ -117,15 +117,15 @@
                 <li class="nav-item">
                     <!-- Nested Accordion for Services -->
                     <div class="accordion" id="servicesAccordion">
-                        <div class="accordion-item">
+                        <div class="">
                             <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                <button class="accordion-button collapsed" style="padding-top: 0px; padding-bottom: 0px;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                     Services <i class="fas fa-chevron-down ms-2"></i> <!-- Custom icon -->
                                 </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#servicesAccordion">
                                 <div class="accordion-body">
-                                    <ul class="list-unstyled ps-3">
+                                    <ul class="list-unstyled ps-0">
                                         <li><a href="serviceUnie.html" class="nav-link">Couleur Unie</a></li>
                                         <li><a href="serviceMM.html" class="nav-link">Métallique Marbré</a></li>
                                         <li><a href="serviceBeton.html" class="nav-link">Béton Naturel</a></li>
@@ -138,60 +138,76 @@
                 </li>
                 <li><a href="project.html" class="nav-link">Gallerie</a></li>
                 <li><a href="contact.html" class="nav-link">Nous Joindre</a></li>
-                <li><a href="quote.html" class="nav-link">Estimation Gratuite</a></li>
+                <li><a href="quote.html" class="nav-link nav-red">Estimation Gratuite</a></li>
             </ul>
         </div>
     </div>
     <style>
         .offcanvas-end {
-        width: 250px; /* Width of the drawer */
-    }
-    .offcanvas-dark {
-        background-color: black; /* Black background */
-        color: white; /* White text */
-    }
-    .offcanvas-dark .nav-link {
-        color: white; /* White text for nav links */
-    }
-    .offcanvas-dark .nav-link:hover {
-        color: #cccccc; /* Lighter gray on hover */
-    }
-    .offcanvas-dark .btn-close {
-        filter: invert(1); /* Invert close button color */
-    }
-    .offcanvas-dark .offcanvas-header,
-    .offcanvas-dark .offcanvas-body {
-        border-color: white; /* Optional border color */
-    }
-    .offcanvas-dark .accordion-button {
-        background-color: black; /* Black background for accordion button */
-        color: white; /* White text */
-        border: none; /* Remove default border */
-    }
-    .offcanvas-dark .accordion-button:not(.collapsed) {
-        background-color: black; /* Black background when expanded */
-    }
-    .offcanvas-dark .accordion-button:focus {
-        box-shadow: none; /* Remove focus shadow */
-    }
-    .offcanvas-dark .accordion-button::after {
-        display: none; /* Hide default caret */
-    }
-    .offcanvas-dark .accordion-item {
-        border: none; /* Remove border from accordion items */
-    }
-    .offcanvas-dark .accordion-body {
-        background-color: black; /* Black background for accordion body */
+            width: 250px; /* Width of the drawer */
+        }
+        .offcanvas-dark {
+            background-color: rgba(0, 0, 0, 0.781); /* Black background */
+        }
+        .offcanvas-dark .nav-link {
+            color: white; /* White text for nav links */
+            text-align: left; /* Align text to the left */
+            display: block; /* Ensure the link takes full width */
+            padding: 5px 10px; /* Consistent padding for each link */
+        }
+        .offcanvas-dark .nav-link:hover {
+            color: #cccccc; /* Lighter gray on hover */
+        }
+        .offcanvas-dark .btn-close {
+            filter: invert(1); /* Invert close button color */
+        }
+        .offcanvas-dark .offcanvas-header,
+        .offcanvas-dark .offcanvas-body {
+            border-color: white; /* Optional border color */
+        }
+        .offcanvas-dark .accordion-button {
+            background-color: rgba(0, 0, 0, 0.781); /* Black background for accordion button */
+            color: white; /* White text */
+            border: none; /* Remove default border */
+            padding: 10px 15px; /* Consistent padding */
+        }
+        .offcanvas-dark .accordion-button:not(.collapsed) {
+            background-color: rgba(0, 0, 0, 0.781); /* Black background when expanded */
+        }
+        .offcanvas-dark .accordion-button:focus {
+            box-shadow: none; /* Remove focus shadow */
+        }
+        .offcanvas-dark .accordion-button::after {
+            display: none; /* Hide default caret */
+        }
+        .offcanvas-dark .accordion-item {
+            border: none; /* Remove border from accordion items */
+        }
+        .offcanvas-dark .accordion-body {
+        background-color: rgba(0, 0, 0, 0.781); /* Black background for accordion body */
         color: white; /* White text for accordion content */
-    }
-    .offcanvas-dark .accordion-collapse {
-        border: none; /* Remove border from collapse */
-    }
-    .offcanvas-dark .accordion-button:not(.collapsed)::after {
-        background-image: none; /* Hide caret on expanded state */
-    }
-          
-      </style>  
+        padding-left: 0; /* Remove left padding to eliminate space */
+        padding-top: 0; /* Remove top padding */
+        padding-bottom: 0; /* Remove bottom padding */
+        }
+        .offcanvas-dark .accordion-collapse {
+            border: none; /* Remove border from collapse */
+        }
+        .offcanvas-dark .accordion-button:not(.collapsed)::after {
+            background-image: none; /* Hide caret on expanded state */
+        }
+        .offcanvas-dark ul.list-unstyled {
+            padding-left: 0; /* Remove default padding */
+            margin-bottom: 0; /* Remove bottom margin */
+        }
+        .offcanvas-dark ul.list-unstyled > li {
+            padding: 0; /* Remove padding for consistent spacing */
+            margin-bottom: 10px; /* Consistent spacing between items */
+        }
+        .offcanvas-dark ul.list-unstyled > li:last-child {
+            margin-bottom: 0; /* Remove bottom margin for last item */
+        }
+    </style>
 
 <!-- Bootstrap JS -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
