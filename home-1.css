@@ -1,5 +1,5 @@
  .u-section-1 {
-  min-height: 1101px;
+  min-height: 870px;
 }
 
 .u-section-1 .u-shape-1 {
@@ -19,7 +19,7 @@
   --animation-custom_in-opacity: 0;
   --animation-custom_in-rotate: 0deg;
   --animation-custom_in-scale: 1;
-  margin: -514px auto 0 calc(((100% - 1140px) / 2));
+  margin: -597px auto 0 calc(((100% - 1140px) / 2)  + -75px);
 }
 
 .u-section-1 .u-group-1 {
@@ -30,7 +30,8 @@
   --animation-custom_in-opacity: 0;
   --animation-custom_in-rotate: 0deg;
   --animation-custom_in-scale: 1;
-  margin: -280px calc(((100% - 1140px) / 2)) 60px auto;
+  height: auto;
+  margin: -439px calc(((100% - 1140px) / 2)  + 47px) 60px auto;
 }
 
 .u-section-1 .u-container-layout-1 {
@@ -79,6 +80,10 @@
 }
 
 @media (max-width: 1199px) {
+   .u-section-1 {
+    min-height: 1101px;
+  }
+
   .u-section-1 .u-image-1 {
     width: 788px;
     height: 591px;
@@ -88,6 +93,7 @@
   .u-section-1 .u-group-1 {
     margin-top: -208px;
     margin-right: calc(((100% - 940px) / 2));
+    height: auto;
   }
 }
 
@@ -139,18 +145,20 @@
 
 @media (max-width: 575px) {
    .u-section-1 {
-    min-height: 972px;
+    min-height: 876px;
   }
 
   .u-section-1 .u-image-1 {
+    height: 269px;
     width: 340px;
-    height: 234px;
-    margin-left: calc(((100% - 340px) / 2));
+    margin-top: -703px;
+    margin-left: auto;
   }
 
   .u-section-1 .u-group-1 {
-    width: 340px;
-    margin-top: 20px;
+    width: 349px;
+    margin-top: 8px;
+    margin-bottom: 50px;
   }
 
   .u-section-1 .u-container-layout-1 {
@@ -1157,7 +1165,7 @@
 .u-section-7 .u-image-1 {
   width: 473px;
   height: 473px;
-  background-image: url("img/11red.jpg");
+  background-image: url("images/bnnbn.jpg");
   background-position: 50% 50%;
   --animation-custom_in-translate_x: 50px;
   --animation-custom_in-translate_y: 0px;
@@ -1597,7 +1605,7 @@
 
 .u-section-9 .u-image-1 {
   min-height: 513px;
-  background-image: url("img/11red.jpg");
+  background-image: url("images/8a1aa2e5-8cf3-71e6-c9eb-ed41797d1a5d.jpg");
   background-position: 50% 50%;
   --animation-custom_in-translate_x: -300px;
   --animation-custom_in-translate_y: 0px;
